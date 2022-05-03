@@ -1,0 +1,94 @@
+.logo1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.logo2 {
+    float: left;
+    height: 200px;
+    width: 300px;
+}
+
+.logo3 {
+    float: right;
+    height: 200px;
+    width: 300px;
+}
+
+.topnav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightgrey;
+    padding: 10px;
+    padding-left: 550px;
+
+topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+topnav li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-align: center;
+    
+}
+
+topnav li {
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    
+}
+
+topnav li a:hover {
+    background-color: white;
+}
+
+.footer{
+    float: left;
+    width: 100%;
+    background-color: #171a21;
+}
+
+.footercontact{
+    float: left;
+    line-height: 60px;
+    width: 300px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+.footernav{
+    float: right;
+    width: 60%;
+}
+.footernav ul{
+    text-align: center;
+}
+.footernav ul li{
+    display: inline;
+    line-height: 60px;
+    padding: 20px 3%;
+}
+.footernav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.footernav ul li a:hover{
+    color: #617073;
+}

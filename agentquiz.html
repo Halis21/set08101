@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="sound" src="totalscore.mp3" preload="auto"></audio> 
+</head>
+<body>
+    <div class="headerlogo">
+        <img class="logo1" src="logo1.png">
+    </div>
+
+    <h2>Valorant Agent Quiz</h2>
+    
+    <div class="navbar"> 
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="videos.html">Videos</a></li>
+        </ul>
+    </div>
+<hr>
+
+<div class="questions">
+
+    <h4> What Agent uses Trailblazer?</h4> 
+
+<br>
+
+    <input type="radio" name="q1" value ="correct"> Skye
+    
+    <input type="radio" name="q1"> Astra
+    
+    <input type="radio" name="q1"> Breach
+    
+    <input type="radio" name="q1"> Raze
+
+<br>
+<br>
+    <button class="next" onclick="nextq(1); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What Agent uses Tripwire Traps?</h4>
+
+<br>
+
+    <input type="radio" name="q2"> Phoenix
+    
+    <input type="radio" name="q2"> Kayo
+    
+    <input type="radio" name="q2"> Killjoy
+    
+    <input type="radio" name="q2" value="correct"> Cypher
+    
+<br>
+<br>
+
+<button class="previous" onclick="previousq(1)"> Previous</button>
+<button class="next" onclick="nextq(2); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What Agent uses the Stim Beacon?</h4>
+
+<br>
+
+    <input type="radio" name="q3"> Sage
+    
+    <input type="radio" name="q3"> Raze
+    
+    <input type="radio" name="q3" value ="correct"> Brimstone
+    
+    <input type="radio" name="q3"> Reyna
+    
+<br>
+<br>
+<button class="previous" onclick="previousq(2)"> Previous</button>
+<button class="next" onclick="nextq(3); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What Agent uses a slow orb?</h4>
+
+<br>
+
+    <input type="radio" name="q4"> Reyna
+    
+    <input type="radio" name="q4" value="correct"> Sage
+    
+    <input type="radio" name="q4"> Yoru
+    
+    <input type="radio" name="q4"> Chamber
+    
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(3)"> Previous</button>
+<button class="next" onclick="nextq(4); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What Agent uses Tailwind?</h4>
+
+    <br>
+
+    <input type="radio" name="q5"> Neon
+    
+    <input type="radio" name="q5"> Chamber
+   
+    <input type="radio" name="q5"> Phoenix
+    
+    <input type="radio" name="q5" value ="correct"> Jett
+
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(4)"> Previous</button>
+<button class="submit" onclick="results(); totalscore(); document.getElementById('sound').play(); "> Submit</button>
+</div>
+
+<hr>
+
+<h5>Your Score is:  <span id="totalscore"></span></h5>
+
+<h6> Time Taken: <span id="timer"></span></h6>
+
+<script>
+     window.onload = function startTimer(){ // start timer when page is opened
+  myTimer = setInterval(count, 1000); // count
+};
+
+function stopTimer(){
+    clearInterval(MyTimer) // tried to stop timer
+}
+
+var counter = 0;
+function count(){
+  document.getElementById("timer").innerHTML = counter++; 
+}
+
+</script>
+
+<hr>
+    <div class="footer">
+            <div class="footercontact">
+                <p>Contact: 40488080@live.napier.ac.uk</p>
+            </div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

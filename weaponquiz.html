@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="sound" src="totalscore.mp3" preload="auto"></audio>
+</head>
+<body>
+    <div class="headerlogo">
+        <img class="logo1" src="logo1.png">
+    </div>
+
+    <h2>Valorant Agent Quiz</h2>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="videos.html">Videos</a></li>
+        </ul>
+    </div>
+<hr>
+
+<div class="questions">
+
+    <h4> How much is a Sheriff?</h4> 
+
+    <br>
+    
+    <input type="radio" name="q1"> 450
+    
+    <input type="radio" name="q1"> 1200
+    
+    <input type="radio" name="q1"> 600
+   
+    <input type="radio" name="q1" value="correct"> 800
+
+    <br>
+    <br>
+
+    <button class="next" onclick="nextq(1); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> How much does a Vandal cost?</h4>
+
+    <br>
+
+    <input type="radio" name="q2"> 1600
+    
+    <input type="radio" name="q2"> 2050
+    
+    <input type="radio" name="q2" value="correct"> 2900
+    
+    <input type="radio" name="q2"> 2400
+
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(1)"> Previous</button>
+<button class="next" onclick="nextq(2); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> How much does the Operator cost?</h4>
+
+    <br>
+
+    <input type="radio" name="q3"> 3900
+    
+    <input type="radio" name="q3"> 4500
+    
+    <input type="radio" name="q3" value="correct"> 4700
+    
+    <input type="radio" name="q3"> 5000
+    
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(2)"> Previous</button>
+<button class="next" onclick="nextq(3); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What gun has a right click burst?</h4>
+
+    <br>
+
+    <input type="radio" name="q4" value="correct"> Classic
+   
+    <input type="radio" name="q4"> Ghost
+    
+    <input type="radio" name="q4" > Spectre
+    
+    <input type="radio" name="q4"> Stinger
+
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(3)"> Previous</button>
+<button class="next" onclick="nextq(4); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What gun is free?</h4>
+
+    <br>
+
+    <input type="radio" name="q5" value="correct"> Classic
+    
+    <input type="radio" name="q5"> Odin
+   
+    <input type="radio" name="q5"> Ares
+    
+    <input type="radio" name="q5"> Frenzy
+
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(4)"> Previous</button>
+<button class="submit" onclick="results(); totalscore(); document.getElementById('sound').play(); "> Submit</button>
+</div>
+
+<hr>
+
+<h5>Your Score is:  <span id="totalscore"></span></h5>
+
+<h6> Time Taken: <span id="timer"></span></h6>
+
+<script>
+     window.onload = function startTimer(){
+  myTimer = setInterval(count, 1000);
+};
+
+function stopTimer(){
+    clearInterval(MyTimer)
+}
+
+var counter = 0;
+function count(){
+  document.getElementById("timer").innerHTML = counter++;
+}
+
+</script>
+
+<hr>
+
+<h5>Your Score is:  <span id="totalscore"></span></h5>
+
+<hr>
+    <div class="footer">
+            <div class="footercontact">
+                <p>Contact: 40488080@live.napier.ac.uk</p>
+            </div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="sound" src="totalscore.mp3" preload="auto"></audio>
+</head>
+<body>
+    <div class="headerlogo">
+        <img class="logo1" src="logo1.png">
+    </div>
+
+    <h2>Valorant Agent Quiz</h2>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="videos.html">Videos</a></li>
+        </ul>
+    </div>
+<hr>
+
+<div class="questions">
+
+    <h4> What map has 3 bombsites?</h4> 
+
+    <br>
+    
+    <input type="radio" name="q1" value ="correct"> Haven
+    
+    <input type="radio" name="q1"> Ascent
+   
+    <input type="radio" name="q1"> Bind
+    
+    <input type="radio" name="q1"> Breeze
+
+    <br>
+    <br>
+
+    <button class="next" onclick="nextq(1); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What map has 2 closable doors that can be destroyed?</h4>
+
+    <br>
+   
+    <input type="radio" name="q2"> Bind
+   
+    <input type="radio" name="q2" value ="correct"> Ascent
+   
+    <input type="radio" name="q2"> Fracture
+    
+    <input type="radio" name="q2"> Split
+    
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(1)"> Previous</button>
+<button class="next" onclick="nextq(2); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What map is Tropical?</h4>
+
+    <br>
+
+    <input type="radio" name="q3"> Bind
+    
+    <input type="radio" name="q3" value ="correct"> Breeze
+    
+    <input type="radio" name="q3"> Icebox
+    
+    <input type="radio" name="q3"> Haven
+
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(2)"> Previous</button>
+<button class="next" onclick="nextq(3); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What is the newest map?</h4>
+
+    <br>
+
+    <input type="radio" name="q4"> Bind
+   
+    <input type="radio" name="q4"> Split
+    
+    <input type="radio" name="q4" value ="correct"> Fracture
+    
+    <input type="radio" name="q4"> Breeze
+
+    <br>
+    <br>
+
+<button class="previous" onclick="previousq(3)"> Previous</button>
+<button class="next" onclick="nextq(4); results();"> Next</button>
+</div>
+
+<div class="questions">
+
+    <h4> What map has teleporters?</h4>
+    
+    <br>
+
+    <input type="radio" name="q5"> Haven
+    
+    <input type="radio" name="q5"> Icebox
+   
+    <input type="radio" name="q5"> Split
+   
+    <input type="radio" name="q5" value ="correct"> Bind
+
+    <br>
+    <br>
+
+    <button class="previous" onclick="previousq(4)"> Previous</button>
+<button class="submit" onclick="results(); totalscore(); document.getElementById('sound').play(); "> Submit</button>
+</div>
+
+<hr>
+
+<h5>Your Score is:  <span id="totalscore"></span></h5>
+
+<h6> Time Taken: <span id="timer"></span></h6>
+
+<script>
+     window.onload = function startTimer(){
+  myTimer = setInterval(count, 1000);
+};
+
+function stopTimer(){
+    clearInterval(MyTimer)
+}
+
+var counter = 0;
+function count(){
+  document.getElementById("timer").innerHTML = counter++;
+}
+
+</script>
+
+<hr>
+
+    <div class="footer">
+            <div class="footercontact">
+                <p>Contact: 40488080@live.napier.ac.uk</p>
+            </div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

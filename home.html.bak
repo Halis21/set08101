@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headerlogo">
+        <img class="logo1" src="logo1.png">
+    </div>
+    
+    <div class="headertitle"></div>
+    
+    <div class="navMenu">
+        <a class="active" href="home.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="practice.html">Practice</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="review.html">Review</a>
+      </div>
+
+    <div class="main1">
+        <img class="logo2" src="logo2.jpg" >
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel hendrerit enim. Vivamus vestibulum orci id eros placerat tristique. Proin id elit vulputate, pretium velit sed, fringilla odio. Nulla neque lectus, finibus et ex sed, facilisis consequat arcu. Proin at rutrum mi. Quisque bibendum nunc eget urna accumsan hendrerit ut eu tellus. Sed accumsan nibh eget pretium interdum. Curabitur luctus, magna nec semper ultricies, lorem sem semper libero, vel scelerisque odio lacus ut lorem.
+        </p>
+    </div>
+
+    <div class="main2">
+        <img class="logo3" src="logo3.jpg">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel hendrerit enim. Vivamus vestibulum orci id eros placerat tristique. Proin id elit vulputate, pretium velit sed, fringilla odio. Nulla neque lectus, finibus et ex sed, facilisis consequat arcu. Proin at rutrum mi. Quisque bibendum nunc eget urna accumsan hendrerit ut eu tellus. Sed accumsan nibh eget pretium interdum. Curabitur luctus, magna nec semper ultricies, lorem sem semper libero, vel scelerisque odio lacus ut lorem.
+        </p>
+    </div>
+
+    <div class="footer">
+            <div class="footercontact">
+                <p>Contact: 40488080@live.napier.ac.uk</p>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
